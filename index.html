@@ -1,21 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сучасна Пекарня</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="#"><img src="./img/logo.svg" alt="Логотип Сучасна Пекарня"></a>
+      <a href="./index.html"><img src="./img/logo.svg" alt="Логотип Сучасна Пекарня"></a>
       <ul>
-        <li><span><a href="#">Наші традиції</a></span></li>
-        <li><a href="#">Шеф-кухарі</a></li>
-        <li><a href="#">Формати</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><span><a href="#traditions-section">Наші традиції</a></span></li>
+        <li><a href="#chefs-sections">Шеф-кухарі</a></li>
+        <li><a href="#formts-section">Формати</a></li>
+        <li><a href="#contacts-section">Контакти</a></li>
       </ul>
     </nav>
     <button type="button">Замовити дзвінок</button>
@@ -24,7 +26,7 @@
     <section>
       <h1>Сучасна Пекарня</h1>
     </section>
-    <section>
+    <section id="traditions-section">
       <ul>
         <li>Великий попит на ринку</li>
         <li>Доступні за бюджетом формати</li>
@@ -40,7 +42,7 @@
       </p>
       <img src="./img/Baker-Man.jpg" alt="Чоловік-пекар дивиться на батони з посмішкою">
     </section>
-    <section>
+    <section id="chefs-sections">
       <h2>Наші найкращі шеф -кухарі</h2>
       <ul>
         <li>
@@ -62,7 +64,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="formts-section">
       <h2>Формати</h2>
       <ul>
         <li>
@@ -82,9 +84,13 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="contacts-section">
       <h2>Приєднуйся до мережі пекарень</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712575873!2d30.48865857537972!3d50.456673086917206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sie!4v1689782604906!5m2!1sru!2sie"
+        width="603" height="595" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
   </main>
   <footer>
     <nav>
@@ -111,7 +117,7 @@
       </ul>
     </address>
     <a href="#">Політика конфіденційності</a>
-    <p>© 2022 Дані захищені</p>
+    <p>&copy;2022 Дані захищені</p>
   </footer>
 </body>
 
