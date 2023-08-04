@@ -44,6 +44,8 @@
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -115,13 +117,42 @@ address {
 .menu-link:hover {
   color: var(--color-brend-light);
   text-decoration: underline;
-  font-weight: 600;
+}
+
+/* Header */
+
+.header {
+  background-color: aqua;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 /* Hero Section */
 
 .hero-section {
   padding: 272px 0;
+  background-image: url('/img/hero-section-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -140,12 +171,19 @@ address {
 
 /* Advantages Section */
 
-.advantages-list {
-  color: var(--color-primary-light);
+.advantages-section {
+  padding: 16px 0;
   background-color: var(--color-brend-light);
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .advantages-item {
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
@@ -163,12 +201,26 @@ address {
 
 /* Traditions Section */
 
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .traditions-section {
   padding-top: 96px;
 }
 
 .traditions-title {
   margin-bottom: 42px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
+.traditions-text.limited {
+  max-width: 340px;
 }
 
 .traditions-text span {
@@ -202,6 +254,33 @@ address {
   margin-bottom: 80px;
 }
 
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  height: 444px;
+  padding: 24px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  color: var(--color-primary-light);
+}
+
 .format-text {
   font-size: 14px;
   font-weight: 300;
@@ -214,6 +293,27 @@ address {
 }
 
 /* Footer */
+
+.footer {
+  background-color: var(--color-primary-dark);
+  background-image: url(/img/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 166px;
+}
 
 .address-link {
   color: var(--color-primary-light);
